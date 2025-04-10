@@ -57,7 +57,7 @@ If you see the local folder now contain all the files from your github repositor
 Now, open Cursor and then click "Open Project"-choose the local folder we created in step 2. You will see the cursor as below if you open project successfully. 
 ![insturction example](images/cursor_page.png)
 
-Then you can use the chatbox on the left to ask any questions. 
+Then you can use the chatbox on the left to ask any questions. Remember to use the "Agent" mode, rather than "Ask" mode.
 
 For example, I didn't learn how to create a webpage so that I'm conservative on making edits to make sure my edits will not disable some functions or ruin the codes. My goal now is only to edit the content on the webpage to replace them with my perdsonal introductions.
 
