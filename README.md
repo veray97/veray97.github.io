@@ -30,25 +30,49 @@ Error: At the beginning of this step, if you open your webpage (as for me, it's 
 
 ![insturction example](images/instruction.png)
 
-
 ## Step 2:
-The main configuration file for the site is in the base directory in _config.yml, which defines the content in the sidebars and other site-wide features. You will need to replace the default variables with ones about yourself and your site’s github repository. The configuration file for the top menu is in _data/navigation.yml. For example, if you don’t have a portfolio or blog posts, you can remove those items from that navigation.yml file to remove them from the header.
-
-## Step 3:
 After you modify the _config.yml and _data/navigation.yml, there is still quite a lot contents need to be updated. If you want to have more functions but you don't know much about coding, you can download "Cursor" on your laptop. This can assist you to realize the function you want.
 
 Required App in Laptop:
 1. Cursor
 2. Github
 
-### Step 2.1: Open terminal. Enter the codes to Navigate to local empty folder you created to holder the files.(Our goal is to connect the local folder with the github repository,which is similar to folder holding all our files for the project. In this way, if we make edits in our local folder, we can push the updated version to repository to make sure these edits are also refreshed in github)
+Open the terminal and input the codes below to setup the connection. Our goal is to connect the local folder with the github repository,which is similar to folder holding all our files for the project. In this way, if we make edits in our local folder, we can push the updated version to repository to make sure these edits are also refreshed in github
+1. Navigate to local empty folder you created to holder the files.
 cd path/to/your/folder
 
-### Step 2.2: Initialize Git (if not already initialized)
+3. Initialize Git (if not already initialized)
 git init
 
-### Step 2.3: Add the GitHub repository as remote(For me, it's https://github.com/veray97/veray97.github.io.git)
+3. Add the GitHub repository as remote(For me, it's https://github.com/veray97/veray97.github.io.git)
 git remote add origin https://github.com/username/repository-name.git
+git status
+git add . && git status
+git commit -m “Name_of_change“ 
+git push --set-upstream origin main
+
+In "Name_of_change", please name the change you made in local folder, for example "image add" or "main page updated".I didn't know the importance until I learn how github works, whcih is shown below:
+
+How GitHub Records Changes
+      GitHub uses the Git version control system to track and manage code changes. 
+      The core features of this system include:
+          Commits: Each commit is a snapshot of the codebase at a specific point in time, containing the state of all files
+          Diffs: Git stores the changes to files rather than complete copies, which saves space
+          History: All changes have timestamps and author information, forming a complete historical record
+Git's Working Model
+      Git is more accurately described as a "content-addressable file system" rather than a pure state mechanism:
+      Git tracks changes in file content, not just file states
+      Each commit creates a snapshot of the entire project, not just a transition of states
+      Each commit and file content is uniquely identified by a hash value (SHA-1)
+Advantages of Version Control
+      This method of recording changes offers several key advantages:
+      Comprehensive history: You can view the code state at any point in time
+      Collaboration capabilities: Multiple people can work on the same codebase simultaneously
+      Branch management: You can create different development lines that don't interfere with each other
+      Rollback ability: You can easily return to any previous version
+      
+## Step 5:
 
 ### Step 2.4: Pull the existing content (The default branch on GitHub is master (not main))
 git pull origin master
+
