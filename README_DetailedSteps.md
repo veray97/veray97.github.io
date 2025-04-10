@@ -22,12 +22,14 @@ You can now open your webpage through the link
 ![you webpage example](images/screenshotwebcreate.png "You can now open your webpage through the link")
 
 
-## Step 2:
+## Trouble shooting as this step:
 
-At the beginning of this step, if you open your webpage (as for me, it's https://veray97.github.io/), and open the "developer tools"-"Sources". You can see that the repository used under this webpage is still acadeicpages.github.io, which means that the edits you made and the images you added under your repository will not be recognized by the webpage.
+(One problem may occur if you didn't name the github webpage as https://[your GitHub username].github.io. For example, if I name the repocitory as verayang.github.io, then there may the problem shown below. This can not be fixed even though you rename this created repository. The solution is to repeat the "getting started" step and name the repository correctly when you create it.)
+
+Error: At the beginning of this step, if you open your webpage (as for me, it's https://veray97.github.io/), and open the "developer tools"-"Sources". You can see that the repository used under this webpage. If it's shown as below, which is that a part of it is still acadeicpages.github.io. It means that the edits you made and the images you added under your repository will not be recognized by the webpage.
 
 ![insturction example](images/instruction.png)
 
 
-## Step 3:
+## Step 2:
 The main configuration file for the site is in the base directory in _config.yml, which defines the content in the sidebars and other site-wide features. You will need to replace the default variables with ones about yourself and your site’s github repository. The configuration file for the top menu is in _data/navigation.yml. For example, if you don’t have a portfolio or blog posts, you can remove those items from that navigation.yml file to remove them from the header.
