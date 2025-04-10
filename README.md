@@ -66,12 +66,13 @@ Then you can ask: "Please read all the files under current foler. This is a proj
 Great, now you can go to this file in local folder and replace it with your personal contents.
 
 ## Step 4:
-All the edits you made now are in local folder, so we want the github repository to be refreshed. Then you can open terminal and enter the four lines of codes below so that the github repository will also be updated to the status of your local folder. 
+All the edits you made now are in local folder, so we want the github repository to be refreshed. Then you can open terminal and enter the five lines of codes below so that the github repository will also be updated to the status of your local folder. 
 
 cd path/to/your/folder
 git status
 git add . && git status
-git commit -m “Name_of_change“ && git push
+git commit -m “Name_of_change“ 
+git push --set-upstream origin main
 
 In "Name_of_change", please name the change you made in local folder, for example "image add" or "main page updated".I didn't know the importance until I learn how github works, whcih is shown below:
 
