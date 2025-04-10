@@ -72,7 +72,7 @@ cd path/to/your/folder
 git status
 git add . && git status
 git commit -m “Name_of_change“ 
-git push --set-upstream origin main
+git push -f origin main
 
 In "Name_of_change", please name the change you made in local folder, for example "image add" or "main page updated".I didn't know the importance until I learn how github works, whcih is shown below:
 
