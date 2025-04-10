@@ -50,10 +50,5 @@ git init
 ### Step 2.3: Add the GitHub repository as remote(For me, it's https://github.com/veray97/veray97.github.io.git)
 git remote add origin https://github.com/username/repository-name.git
 
-### Step 2.4: Pull the existing content (if any)
-git pull origin main
-
-### Step 2.5: Set up tracking relationship (if needed)
-git branch --set-upstream-to=origin/main main
-
-
+### Step 2.4: Pull the existing content (The default branch on GitHub is master (not main))
+git pull origin master
