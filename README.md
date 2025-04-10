@@ -46,29 +46,6 @@ git init
 
 3. Add the GitHub repository as remote(For me, it's https://github.com/veray97/veray97.github.io.git)
 git remote add origin https://github.com/username/repository-name.git
-
-4. Pull the existing content (The default branch on GitHub is master (not main))
-git pull origin master
-
-## Step 3:
-If you see the local folder now contain all the files from your github repository, congratulations, you are now on high way!
-
-Now, open Cursor and then click "Open Project"-choose the local folder we created in step 2. You will see the cursor as below if you open project successfully. 
-![insturction example](images/cursor_page.png)
-
-Then you can use the chatbox on the left to ask any questions. 
-
-For example, I didn't learn how to create a webpage so that I'm conservative on making edits to make sure my edits will not disable some functions or ruin the codes. My goal now is only to edit the content on the webpage to replace them with my perdsonal introductions.
-
-Then you can ask: "Please read all the files under current foler. This is a project about a presonal webpage created under github.io. However I want to modify the content on the webpage. I only know what is shown on the webpage with content like "This is the front page of a website that is powered by", but I don't know where is it located. Can you help me to find it?"
-![insturction example](images/cursor_answer.png)
-
-Great, now you can go to this file in local folder and replace it with your personal contents.
-
-## Step 4:
-All the edits you made now are in local folder, so we want the github repository to be refreshed. Then you can open terminal and enter the five lines of codes below so that the github repository will also be updated to the status of your local folder. 
-
-cd path/to/your/folder
 git status
 git add . && git status
 git commit -m “Name_of_change“ 
@@ -95,3 +72,7 @@ Advantages of Version Control
       Rollback ability: You can easily return to any previous version
       
 ## Step 5:
+
+### Step 2.4: Pull the existing content (The default branch on GitHub is master (not main))
+git pull origin master
+
